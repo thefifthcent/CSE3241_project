@@ -21,7 +21,43 @@ public class Member {
         startDate = "";
         endDate = "";
         warehouseDistance = 0.0;
-        userID = 0;
+        userID = Main.currentUserID++;
+    }
+
+    public void updateFName() {
+        // TODO
+    }
+
+    public void updateLName() {
+        // TODO
+    }
+
+    public void updateAddress() {
+        // TODO
+    }
+
+    public void updatePhoneNumber() {
+        // TODO
+    }
+
+    public void updateEmail() {
+        // TODO
+    }
+
+    public void updateStartDate() {
+        // TODO
+    }
+
+    public void updateEndDate() {
+        // TODO
+    }
+
+    public void updateWarehouseDistance() {
+        // TODO
+    }
+
+    public void updateUserID() {
+        // TODO
     }
     
 }
