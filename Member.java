@@ -21,7 +21,7 @@ public class Member {
         startDate = "";
         endDate = "";
         warehouseDistance = 0.0;
-        userID = Main.currentUserID++;
+        userID = mainFile.currentUserID++;
     }
 
     public void updateFName() {
