@@ -49,13 +49,13 @@ public class Equipment {
 
     public void updateDescription(Scanner in) {
         System.out.println("Enter new description: ");
-        int newDescription = in.nextInt();
+        String newDescription = in.nextLine();
 
         System.out.println("Description will be updated to " + newDescription + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new description: ");
-            newDescription = in.nextInt();
+            newDescription = in.nextLine();
             System.out.println("Description will be updated to " + newDescription + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
@@ -66,6 +66,7 @@ public class Equipment {
     public void updateModelNumber(Scanner in) {
         System.out.println("Enter new model number: ");
         int newMD = in.nextInt();
+        in.nextLine();
 
         System.out.println("Model number will be updated to " + newMD + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
@@ -75,16 +76,17 @@ public class Equipment {
             System.out.println("Model name will be updated to " + newMD + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
-        this.modeNumber = newMD;
+        this.modelNumber = newMD;
         System.out.println("Model number updated to " + this.modelNumber);
     }
 
     public void updateYear(Scanner in) {
         System.out.println("Enter new year: ");
         int newYear = in.nextInt();
+        in.nextLine();
 
         System.out.println("Year will be updated to " + newYear + ". Is this correct? (y/n)");
-        String userInput = in.nextInt();
+        String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new year: ");
             newYear = in.nextInt();
@@ -98,6 +100,7 @@ public class Equipment {
     public void updateSerialNumber(Scanner in) {
         System.out.println("Enter new serial number: ");
         int newSN = in.nextInt();
+        in.nextLine();
 
         System.out.println("Serial number will be updated to " + newSN + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
@@ -113,7 +116,8 @@ public class Equipment {
 
     public void updateInventoryID(Scanner in) {
         System.out.println("Enter new inventory ID: ");
-        int newInvID = in.nextLine();
+        int newInvID = in.nextInt();
+        in.nextLine();
 
         System.out.println("Inventory ID will be updated to " + newInvID + ". Is this correct? (y/n)");
         String userInput = in.nextLine();

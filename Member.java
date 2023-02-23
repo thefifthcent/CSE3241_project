@@ -149,6 +149,7 @@ public class Member {
     public void updateWarehouseDistance(Scanner in) {
         System.out.println("Enter new warehouse distance: ");
         double newWarehouseDistance = in.nextDouble();
+        in.nextLine();
 
         System.out.println("Warehouse distance will be updated to " + newWarehouseDistance + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
