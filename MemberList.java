@@ -23,7 +23,7 @@ public class MemberList {
         this.memberList.add(newMember);
     }
 
-    public void removeMember(Scanner in) {
+    public void deleteMember(Scanner in) {
         System.out.println("Enter the user ID of the member you would like to remove: ");
         int userID = in.nextInt();
         in.nextLine();
