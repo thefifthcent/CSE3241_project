@@ -32,44 +32,51 @@ public class Equipment {
     }
 
     public void updateType(Scanner in) {
-        System.out.println("Enter new first name: ");
-        String newFName = in.nextLine();
+        System.out.println("Enter new type: ");
+        String newType = in.nextLine();
 
-        System.out.println("First name will be updated to " + newFName + ". Is this correct? (y/n)");
+        System.out.println("First name will be updated to " + newType + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new first name: ");
             newFName = in.nextLine();
-            System.out.println("First name will be updated to " + newFName + ". Is this correct? (y/n)");
+            System.out.println("First name will be updated to " + newType + ". Is this correct? (y/n)");
             userInput = in.nextLine();
+    }
+        this.type = newType;
+        System.out.println("Type updated to " + this.type);
     }
 
     public void updateDescription(Scanner in) {
         System.out.println("Enter new description: ");
-        String newDescription = in.nextLine();
+        int newDescription = in.nextInt();
 
         System.out.println("Description will be updated to " + newDescription + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new description: ");
-            newDescription = in.nextLine();
+            newDescription = in.nextInt();
             System.out.println("Description will be updated to " + newDescription + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.description = newDescription;
+        System.out.println("Description updated to " + this.description);
     }
 
     public void updateModelNumber(Scanner in) {
         System.out.println("Enter new model number: ");
-        String newMD = in.nextLine();
+        int newMD = in.nextInt();
 
         System.out.println("Model number will be updated to " + newMD + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new model number: ");
-            newMD = in.nextLine();
+            newMD = in.nextInt();
             System.out.println("First name will be updated to " + newMD + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.modeNumber = newMD;
+        System.out.println("Model number updated to " + this.modelNumber);
     }
 
     public void updateYear(Scanner in) {
@@ -77,41 +84,47 @@ public class Equipment {
         int newYear = in.nextInt();
 
         System.out.println("Year will be updated to " + newYear + ". Is this correct? (y/n)");
-        int userInput = in.nextInt();
+        String userInput = in.nextInt();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new year: ");
             newYear = in.nextInt();
             System.out.println("Year will be updated to " + newYear + ". Is this correct? (y/n)");
-            userInput = in.nextInt();
+            userInput = in.nextLine();
     }
+        this.year = newYear;
+        System.out.println("Year updated to " + this.year);
     }
 
     public void updateSerialNumber(Scanner in) {
         System.out.println("Enter new serial number: ");
-        String newSN = in.nextLine();
+        int newSN = in.nextInt();
 
         System.out.println("Serial number will be updated to " + newSN + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new serial number: ");
-            newSN = in.nextLine();
+            newSN = in.nextInt();
             System.out.println("Serial number will be updated to " + newSN + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.serialNumber = newSerialNumber;
+        System.out.println("Serial number updated to " + this.serialNumber);
     }
 
     public void updateInventoryID(Scanner in) {
         System.out.println("Enter new inventory ID: ");
-        String newInvID = in.nextLine();
+        int newInvID = in.nextLine();
 
         System.out.println("Inventory ID will be updated to " + newInvID + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new inventory ID: ");
-            newInvID = in.nextLine();
+            newInvID = in.nextInt();
             System.out.println("Inventory ID will be updated to " + newInvID + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.inventoryID = newInvID;
+        System.out.println("Inventory updated to " + this.inventoryID);
     }
 
     public void updateArrivalDate(Scanner in) {
@@ -126,6 +139,8 @@ public class Equipment {
             System.out.println("Arrival date will be updated to " + newArrival + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.arrivalDate = newArrival;
+        System.out.println("Arrival date updated to " + this.arrivalDate);
     }
 
     public void updateWarrantyExpDate(Scanner in) {
@@ -140,6 +155,8 @@ public class Equipment {
             System.out.println("Warranty expiration date will be updated to " + newEXPDate + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.warrantyExpDate = newEXPDate;
+        System.out.println("Expiration date updated to " + this.warrantyExpDate);
     }
 
     public void updateManufacturer(Scanner in) {
@@ -154,34 +171,40 @@ public class Equipment {
             System.out.println("Manufacturer will be updated to " + newMan + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.manufacturer = newMan;
+        System.out.println("Manufacturer updated to " + this.manufacturer);
     }
 
     public void updateWeight(Scanner in) {
         System.out.println("Enter new weight: ");
-        int newWeight = in.nextInt();
+        double newWeight = in.nextDouble();
 
         System.out.println("Weight will be updated to " + newWeight + ". Is this correct? (y/n)");
-        int userInput = in.nextInt();
+        String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new weight: ");
-            newWeight = in.nextInt();
+            newWeight = in.nextDouble();
             System.out.println("Weight will be updated to " + newWeight + ". Is this correct? (y/n)");
-            userInput = in.nextInt();
+            userInput = in.nextLine();
     }
+        this.weight = newWeight;
+        System.out.println("Weight updated to " + this.weight);
     }
 
     public void updateSize(Scanner in) {
         System.out.println("Enter new size: ");
-        int newSize = in.nextInt();
+        double newSize = in.nextDouble();
 
         System.out.println("Size will be updated to " + newSize + ". Is this correct? (y/n)");
-        int userInput = in.nextInt();
+        String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new size: ");
-            newSize = in.nextInt();
+            newSize = in.nextDouble();
             System.out.println("Size will be updated to " + newSize + ". Is this correct? (y/n)");
-            userInput = in.nextInt();
+            userInput = in.nextLine();
     }
+        this.size = newSize;
+        System.out.println("Size updated to " + this.size);
     }
 
     public void updateManualName(Scanner in) {
@@ -196,5 +219,7 @@ public class Equipment {
             System.out.println("Manual name will be updated to " + newManualName + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
+        this.manualName = newManualName;
+        System.out.println("Manual name updated to " + this.manualName);
     }
 }
