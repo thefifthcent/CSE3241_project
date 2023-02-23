@@ -39,7 +39,7 @@ public class Equipment {
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new first name: ");
-            newFName = in.nextLine();
+            newType = in.nextLine();
             System.out.println("First name will be updated to " + newType + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
@@ -107,7 +107,7 @@ public class Equipment {
             System.out.println("Serial number will be updated to " + newSN + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
-        this.serialNumber = newSerialNumber;
+        this.serialNumber = newSN;
         System.out.println("Serial number updated to " + this.serialNumber);
     }
 
