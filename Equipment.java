@@ -35,12 +35,12 @@ public class Equipment {
         System.out.println("Enter new type: ");
         String newType = in.nextLine();
 
-        System.out.println("First name will be updated to " + newType + ". Is this correct? (y/n)");
+        System.out.println("Type will be updated to " + newType + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
-            System.out.println("Enter new first name: ");
+            System.out.println("Enter new type: ");
             newType = in.nextLine();
-            System.out.println("First name will be updated to " + newType + ". Is this correct? (y/n)");
+            System.out.println("Type will be updated to " + newType + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
         this.type = newType;
@@ -72,7 +72,7 @@ public class Equipment {
         while (userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new model number: ");
             newMD = in.nextInt();
-            System.out.println("First name will be updated to " + newMD + ". Is this correct? (y/n)");
+            System.out.println("Model name will be updated to " + newMD + ". Is this correct? (y/n)");
             userInput = in.nextLine();
     }
         this.modeNumber = newMD;
@@ -156,7 +156,7 @@ public class Equipment {
             userInput = in.nextLine();
     }
         this.warrantyExpDate = newEXPDate;
-        System.out.println("Expiration date updated to " + this.warrantyExpDate);
+        System.out.println("Warranty expiration date updated to " + this.warrantyExpDate);
     }
 
     public void updateManufacturer(Scanner in) {
@@ -166,7 +166,7 @@ public class Equipment {
         System.out.println("Manufacturer will be updated to " + newMan + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
         while (userInput.toLowerCase().equals("n")) {
-            System.out.println("Enter new warranty expiration date: ");
+            System.out.println("Enter new manufacturer: ");
             newMan = in.nextLine();
             System.out.println("Manufacturer will be updated to " + newMan + ". Is this correct? (y/n)");
             userInput = in.nextLine();
