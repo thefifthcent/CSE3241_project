@@ -17,6 +17,8 @@ public class WarehouseList {
         newWarehouse.updateManagerName(in);
         newWarehouse.updateStorageCapacity(in);
         newWarehouse.updateDroneCapacity(in);
+        this.warehouseList.add(newWarehouse);
+        System.out.println("Warehouse added. Address: " + newWarehouse.address);
     }
 
     public void deleteWarehouse(Scanner in) {
@@ -27,11 +29,11 @@ public class WarehouseList {
         for(int idx = 0; idx < this.warehouseList.size(); idx++) {
             if(this.warehouseList.get(idx).address == warehouseAddress) {
                 this.warehouseList.remove(idx);
-                System.out.println("Warehouse found.");
+                System.out.println("Warehouse deleted.\n");
                 return;
             }
         }
-        System.out.println("Warehouse not found");
+        System.out.println("Warehouse not found.\n");
     }
 
     public void searchWarehouse(Scanner in){

@@ -31,7 +31,7 @@ public class MemberList {
         for (int i = 0; i < this.memberList.size(); i++) {
             if (this.memberList.get(i).userID == userID) {
                 this.memberList.remove(i);
-                System.out.println("Member removed.");
+                System.out.println("Member deleted.\n");
                 return;
             }
         }

@@ -24,6 +24,7 @@ public class EquipmentList {
         newEquipment.updateSize(in);
         newEquipment.updateManualName(in);
         equipmentList.add(newEquipment);
+        System.out.println("Equipment added. Inventory ID: " + newEquipment.inventoryID);
     }
 
     public void deleteEquipment(Scanner in) {
@@ -33,7 +34,7 @@ public class EquipmentList {
         for (int i = 0; i < equipmentList.size(); i++) {
             if (equipmentList.get(i).inventoryID == inventoryID) {
                 equipmentList.remove(i);
-                System.out.println("Equipment removed.");
+                System.out.println("Equipment deleted\n.");
                 return;
             }
         }
