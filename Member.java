@@ -38,7 +38,7 @@ public class Member {
             newFName = in.nextLine();
             System.out.println("First name will be updated to " + newFName + ". Is this correct? (y/n)");
             userInput = in.nextLine();
-        }
+    }
 
         this.fName = newFName;
         System.out.println("First name updated to " + this.fName);
