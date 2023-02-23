@@ -20,7 +20,6 @@ public class Warehouse {
     }
 
     public void updateCity(Scanner in) {
-        // TODO
         System.out.println("Enter new city: ");
         String newCity = in.nextLine();
 
@@ -38,7 +37,6 @@ public class Warehouse {
     }
 
     public void updateAddress(Scanner in) {
-        // TODO
         System.out.println("Enter new address: ");
         String newAddress = in.nextLine();
 
@@ -56,7 +54,6 @@ public class Warehouse {
     }
 
     public void updatePhoneNumber(Scanner in) {
-        // TODO
         System.out.println("Enter new phone number: ");
         String newPhone = in.nextLine();
 
@@ -74,7 +71,6 @@ public class Warehouse {
     }
 
     public void updateManagerName(Scanner in) {
-        // TODO
         System.out.println("Enter new manager name: ");
         String newManager = in.nextLine();
 
@@ -92,9 +88,9 @@ public class Warehouse {
     }
 
     public void updateStorageCapacity(Scanner in) {
-        // TODO
         System.out.println("Enter new storage capacity : ");
         int newStorageCapacity = in.nextInt();
+        in.nextLine();
 
         System.out.println("Storage capacity will be updated to " + newStorageCapacity + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
@@ -110,9 +106,9 @@ public class Warehouse {
     }
 
     public void updateDroneCapacity(Scanner in) {
-        // TODO
         System.out.println("Enter new drone capacity: ");
         int newDroneCapacity = in.nextInt();
+        in.nextLine();
 
         System.out.println("Drone capacity will be updated to " + newDroneCapacity + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
