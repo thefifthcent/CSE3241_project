@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Member {
     
     // Attributes
@@ -24,39 +26,53 @@ public class Member {
         userID = mainFile.currentUserID++;
     }
 
-    public void updateFName() {
+    public void updateFName(Scanner in) {
+
+        System.out.println("Enter new first name: ");
+        String newFName = in.nextLine();
+
+        System.out.println("First name will be updated to " + newFName + ". Is this correct? (y/n)");
+        String userInput = in.nextLine();
+        while (userInput.toLowerCase().equals("n")) {
+            System.out.println("Enter new first name: ");
+            newFName = in.nextLine();
+            System.out.println("First name will be updated to " + newFName + ". Is this correct? (y/n)");
+            userInput = in.nextLine();
+        }
+
+        this.fName = newFName;
+        System.out.println("First name updated to " + this.fName);
+    }
+
+    public void updateLName(Scanner in) {
         // TODO
     }
 
-    public void updateLName() {
+    public void updateAddress(Scanner in) {
         // TODO
     }
 
-    public void updateAddress() {
+    public void updatePhoneNumber(Scanner in) {
         // TODO
     }
 
-    public void updatePhoneNumber() {
+    public void updateEmail(Scanner in) {
         // TODO
     }
 
-    public void updateEmail() {
+    public void updateStartDate(Scanner in) {
         // TODO
     }
 
-    public void updateStartDate() {
+    public void updateEndDate(Scanner in) {
         // TODO
     }
 
-    public void updateEndDate() {
+    public void updateWarehouseDistance(Scanner in) {
         // TODO
     }
 
-    public void updateWarehouseDistance() {
-        // TODO
-    }
-
-    public void updateUserID() {
+    public void updateUserID(Scanner in) {
         // TODO
     }
     

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Equipment {
     //  Attributes
     String type;
@@ -20,7 +22,7 @@ public class Equipment {
         modelNumber = 0;
         year = 0;
         serialNumber = 0;
-        inventoryID = 0;
+        inventoryID = mainFile.currentInventoryID++;
         arrivalDate = "";
         warrantyExpDate = "";
         manufacturer = "";
@@ -29,51 +31,51 @@ public class Equipment {
         manualName = "";
     }
 
-    public void updateType() {
+    public void updateType(Scanner in) {
         // TODO
     }
 
-    public void updateDescription() {
+    public void updateDescription(Scanner in) {
         // TODO
     }
 
-    public void updateModelNumber() {
+    public void updateModelNumber(Scanner in) {
         // TODO
     }
 
-    public void updateYear() {
+    public void updateYear(Scanner in) {
         // TODO
     }
 
-    public void updateSerialNumber() {
+    public void updateSerialNumber(Scanner in) {
         // TODO
     }
 
-    public void updateInventoryID() {
+    public void updateInventoryID(Scanner in) {
         // TODO
     }
 
-    public void updateArrivalDate() {
+    public void updateArrivalDate(Scanner in) {
         // TODO
     }
 
-    public void updateWarrantyExpDate() {
+    public void updateWarrantyExpDate(Scanner in) {
         // TODO
     }
 
-    public void updateManufacturer() {
+    public void updateManufacturer(Scanner in) {
         // TODO
     }
 
-    public void updateWeight() {
+    public void updateWeight(Scanner in) {
         // TODO
     }
 
-    public void updateSize() {
+    public void updateSize(Scanner in) {
         // TODO
     }
 
-    public void updateManualName() {
+    public void updateManualName(Scanner in) {
         // TODO
     }
 }
