@@ -45,7 +45,7 @@ public class Warehouse {
         while(userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new address: ");
             newAddress = in.nextLine();
-            System.out.println("First name will be updated to " + newAddress + ". Is this correct? (y/n)");
+            System.out.println("Address will be updated to " + newAddress + ". Is this correct? (y/n)");
             userInput = in.nextLine();
         }
 
@@ -97,6 +97,7 @@ public class Warehouse {
         while(userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new storage capacity : ");
             newStorageCapacity = in.nextInt();
+            in.nextLine();
             System.out.println("Storage capacity  will be updated to " + newStorageCapacity + ". Is this correct? (y/n)");
             userInput = in.nextLine();
         }
@@ -115,6 +116,7 @@ public class Warehouse {
         while(userInput.toLowerCase().equals("n")) {
             System.out.println("Enter new drone capacity: ");
             newDroneCapacity = in.nextInt();
+            in.nextLine();
             System.out.println("Drone capacity  will be updated to " + newDroneCapacity + ". Is this correct? (y/n)");
             userInput = in.nextLine();
         }

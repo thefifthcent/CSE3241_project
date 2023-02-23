@@ -21,6 +21,7 @@ public class MemberList {
         newMember.updateEndDate(in);
         newMember.updateWarehouseDistance(in);
         this.memberList.add(newMember);
+        System.out.println("Member added. User ID: " + newMember.userID);
     }
 
     public void deleteMember(Scanner in) {
