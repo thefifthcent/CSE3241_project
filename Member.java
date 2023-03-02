@@ -33,7 +33,7 @@ public class Member {
 
         System.out.println("First name will be updated to " + newFName + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new first name: ");
             newFName = in.nextLine();
             System.out.println("First name will be updated to " + newFName + ". Is this correct? (y/n)");
@@ -50,7 +50,7 @@ public class Member {
 
         System.out.println("Last name will be updated to " + newLName + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new last name: ");
             newLName = in.nextLine();
             System.out.println("Last name will be updated to " + newLName + ". Is this correct? (y/n)");
@@ -67,7 +67,7 @@ public class Member {
 
         System.out.println("Address will be updated to " + newAddress + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new address: ");
             newAddress = in.nextLine();
             System.out.println("Address will be updated to " + newAddress + ". Is this correct? (y/n)");
@@ -84,7 +84,7 @@ public class Member {
 
         System.out.println("Phone number will be updated to " + newPhoneNumber + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new phone number: ");
             newPhoneNumber = in.nextLine();
             System.out.println("Phone number will be updated to " + newPhoneNumber + ". Is this correct? (y/n)");
@@ -101,7 +101,7 @@ public class Member {
 
         System.out.println("Email will be updated to " + newEmail + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new email: ");
             newEmail = in.nextLine();
             System.out.println("Email will be updated to " + newEmail + ". Is this correct? (y/n)");
@@ -118,7 +118,7 @@ public class Member {
 
         System.out.println("Start date will be updated to " + newStartDate + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new start date: ");
             newStartDate = in.nextLine();
             System.out.println("Start date will be updated to " + newStartDate + ". Is this correct? (y/n)");
@@ -135,7 +135,7 @@ public class Member {
 
         System.out.println("End date will be updated to " + newEndDate + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new end date: ");
             newEndDate = in.nextLine();
             System.out.println("End date will be updated to " + newEndDate + ". Is this correct? (y/n)");
@@ -153,7 +153,7 @@ public class Member {
 
         System.out.println("Warehouse distance will be updated to " + newWarehouseDistance + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new warehouse distance: ");
             newWarehouseDistance = in.nextDouble();
             System.out.println("Warehouse distance will be updated to " + newWarehouseDistance + ". Is this correct? (y/n)");

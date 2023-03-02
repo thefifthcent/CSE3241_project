@@ -37,7 +37,7 @@ public class Equipment {
 
         System.out.println("Type will be updated to " + newType + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new type: ");
             newType = in.nextLine();
             System.out.println("Type will be updated to " + newType + ". Is this correct? (y/n)");
@@ -53,7 +53,7 @@ public class Equipment {
 
         System.out.println("Description will be updated to " + newDescription + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new description: ");
             newDescription = in.nextLine();
             System.out.println("Description will be updated to " + newDescription + ". Is this correct? (y/n)");
@@ -70,7 +70,7 @@ public class Equipment {
 
         System.out.println("Model number will be updated to " + newMD + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new model number: ");
             newMD = in.nextInt();
             in.nextLine();
@@ -88,7 +88,7 @@ public class Equipment {
 
         System.out.println("Year will be updated to " + newYear + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new year: ");
             newYear = in.nextInt();
             in.nextLine();
@@ -106,7 +106,7 @@ public class Equipment {
 
         System.out.println("Serial number will be updated to " + newSN + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new serial number: ");
             newSN = in.nextInt();
             in.nextLine();
@@ -123,7 +123,7 @@ public class Equipment {
 
         System.out.println("Arrival date will be updated to " + newArrival + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new arrival date: ");
             newArrival = in.nextLine();
             System.out.println("Arrival date will be updated to " + newArrival + ". Is this correct? (y/n)");
@@ -139,7 +139,7 @@ public class Equipment {
 
         System.out.println("Warranty expiration date will be updated to " + newEXPDate + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new warranty expiration date: ");
             newEXPDate = in.nextLine();
             System.out.println("Warranty expiration date will be updated to " + newEXPDate + ". Is this correct? (y/n)");
@@ -155,7 +155,7 @@ public class Equipment {
 
         System.out.println("Manufacturer will be updated to " + newMan + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new manufacturer: ");
             newMan = in.nextLine();
             System.out.println("Manufacturer will be updated to " + newMan + ". Is this correct? (y/n)");
@@ -172,7 +172,7 @@ public class Equipment {
 
         System.out.println("Weight will be updated to " + newWeight + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new weight: ");
             newWeight = in.nextDouble();
             in.nextLine();
@@ -190,7 +190,7 @@ public class Equipment {
 
         System.out.println("Size will be updated to " + newSize + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new size: ");
             newSize = in.nextDouble();
             in.nextLine();
@@ -207,7 +207,7 @@ public class Equipment {
 
         System.out.println("Manual Name will be updated to " + newManualName + ". Is this correct? (y/n)");
         String userInput = in.nextLine();
-        while (userInput.toLowerCase().equals("n")) {
+        while (!userInput.toLowerCase().equals("y")) {
             System.out.println("Enter new manual name: ");
             newManualName = in.nextLine();
             System.out.println("Manual name will be updated to " + newManualName + ". Is this correct? (y/n)");
